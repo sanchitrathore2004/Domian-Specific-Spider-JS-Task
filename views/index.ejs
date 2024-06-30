@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='./stylesheets/style.css'>
+  <link rel="stylesheet" href="../stylesheets/navigation.css">
+  <title>DishDiscovery</title>
+</head>
+<body>
+  <div id="parent">
+    <div class="mobile-menu">
+      <div class="close-menu"><img src="../images/close.png" alt=""></div>
+      <a href="/publish"><h3>PUBLISH</h3></a>
+      <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+        <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+        <% if (loggedIn) { %>
+          <a href="/logout"><h3 class="m-spc">LOGOUT</h3></a>
+        <% } else { %>
+          <a href="/loginform"><h3 class="m-spc">LOGIN</h3></a>
+        <% } %>
+    </div>
+    <nav>
+      <a href="/"><img src="../images/logo.png" alt=""></a>
+      <div class="navbar-btns">
+        <a href="/publish"><h3>PUBLISH</h3></a>
+        <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+        <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+        <% if (loggedIn) { %>
+          <a href="/logout"><h3 class="spc">LOGOUT</h3></a>
+        <% } else { %>
+          <a href="/loginform"><h3 class="spc">LOGIN</h3></a>
+        <% } %>
+        <img id="menu" src="../images/menu.png" alt="">
+      </div>
+    </nav>
+    <div class="content">
+      <div class="left">
+        <p class="title">Discover Culinary Delights: Select Your Ingredients, Unlock Delicious Recipes!</p>
+        <p class="text">Welcome to <span id="name">DishDiscovery</span>, your ultimate culinary companion! Our innovative platform allows you to explore a world of delicious recipes tailored to the ingredients you have on hand. Simply select your ingredients, and we'll provide you with a variety of mouth-watering recipes to try. Whether you're a seasoned chef or a kitchen novice, our easy-to-follow recipes will inspire your next meal. Say goodbye to wasted ingredients and hello to a new way of cooking—fresh, personalized, and utterly delightful. Dive in and start your culinary adventure with us today!</p>
+        <a href="/select_ingredients"><button>EXPLORE NOW </button></a>
+      </div>
+      <div class="right">
+        <img src="../images/front page pic.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="../javascripts/main.js"></script>
+</body>
+</html>

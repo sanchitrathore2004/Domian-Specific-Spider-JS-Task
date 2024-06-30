@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVED RECIPIES</title>
+    <link rel="stylesheet" href="../stylesheets/savedstyle.css">
+    <link rel="stylesheet" href="../stylesheets/navigation.css">
+</head>
+<body>
+    <div id="parent">
+      <div class="mobile-menu">
+        <div class="close-menu"><img src="../images/close.png" alt=""></div>
+        <a href="/publish"><h3>PUBLISH</h3></a>
+        <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+          <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+          <% if (loggedIn) { %>
+            <a href="/logout"><h3 class="m-spc">LOGOUT</h3></a>
+          <% } else { %>
+            <a href="/loginform"><h3 class="m-spc">LOGIN</h3></a>
+          <% } %>
+      </div>
+      <nav>
+        <a href="/"><img src="../images/logo.png" alt=""></a>
+        <div class="navbar-btns">
+          <a href="/publish"><h3>PUBLISH</h3></a>
+          <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+          <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+          <% if (loggedIn) { %>
+            <a href="/logout"><h3 class="spc">LOGOUT</h3></a>
+          <% } else { %>
+            <a href="/loginform"><h3 class="spc">LOGIN</h3></a>
+          <% } %>
+          <img id="menu" src="../images/menu.png" alt="">
+        </div>
+      </nav>
+        <div class="content">
+            <div class="title">SAVED RECIPIES</div>
+        </div>
+        </div>
+        <script src="../javascripts/savedscript.js"></script>
+        <script src="../javascripts/main.js"></script>
+</body>
+</html>

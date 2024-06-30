@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT INGREDIENTS</title>
+    <link rel="stylesheet" href="../stylesheets/selectionstyle.css">
+    <link rel="stylesheet" href="../stylesheets/navigation.css">
+</head>
+<body>
+    <div id="parent">
+      <div class="mobile-menu">
+        <div class="close-menu"><img src="../images/close.png" alt=""></div>
+        <a href="/publish"><h3>PUBLISH</h3></a>
+        <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+          <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+          <% if (loggedIn) { %>
+            <a href="/logout"><h3 class="m-spc">LOGOUT</h3></a>
+          <% } else { %>
+            <a href="/loginform"><h3 class="m-spc">LOGIN</h3></a>
+          <% } %>
+      </div>
+      <nav>
+        <a href="/"><img src="../images/logo.png" alt=""></a>
+        <div class="navbar-btns">
+          <a href="/publish"><h3>PUBLISH</h3></a>
+          <a href="/recipies"><h3>ALL RECIPIES</h3></a>
+          <a href="/saved_recipies"><h3>SAVED RECIPIES</h3></a>
+          <% if (loggedIn) { %>
+            <a href="/logout"><h3 class="spc">LOGOUT</h3></a>
+          <% } else { %>
+            <a href="/loginform"><h3 class="spc">LOGIN</h3></a>
+          <% } %>
+          <img id="menu" src="../images/menu.png" alt="">
+        </div>
+      </nav>
+        <div class="content">
+            <h1>Got ingredients? Let’s create magic! Select what you have and unlock a world of delicious recipes.</h1>
+            <div class="list-of-ingredients">
+              <span>Turmeric</span>
+<span>Cumin</span>
+<span>Coriander</span>
+<span>Garam-Masala</span>
+<span>Mustard-Seeds</span>
+<span>Fenugreek</span>
+<span>Cardamom</span>
+<span>Cloves</span>
+<span>Cinnamon</span>
+<span>Curry-Leaves</span>
+<span>Asafoetida</span>
+<span>Ginger</span>
+<span>Garlic</span>
+<span>Green-Chilies</span>
+<span>Red-Chili-Powder</span>
+<span>Basmati-Rice</span>
+<span>Lentils-(Dal)</span>
+<span>Chickpeas</span>
+<span>Ghee</span>
+<span>Coconut-Milk</span>
+<span>Tamarind</span>
+<span>Yogurt</span>
+<span>Paneer</span>
+<span>Fish</span>
+<span>Lamb</span>
+<span>Chicken</span>
+<span>Cilantro</span>
+<span>Saffron</span>
+<span>Bay-Leaf</span>
+<span>Black-Cardamom</span>
+<span>Fennel-Seeds</span>
+<span>Nigella-Seeds</span>
+<span>Poppy-Seeds</span>
+<span>Amchur-Powder</span>
+<span>Ajwain</span>
+<span>Chaat-Masala</span>
+<span>Kasuri-Methi</span>
+<span>Panch-Phoron</span>
+<span>Rice-Flour</span>
+<span>Chickpea Flour</span>
+<span>Jaggery</span>
+<span>Coconut</span>
+<span>Almonds</span>
+<span>Cashews</span>
+<span>Pistachios</span>
+<span>Black-Pepper</span>
+<span>Mustard-Oil</span>
+<span>Curry-Powder</span>
+<span>Chana-Masala</span>
+<span>Raita</span>
+<span>Chutney</span>
+            </div>
+            <div class="selected-ingredients">
+
+            </div>
+            <div class="btns">
+            <div class="check-btn">
+              CHECK FOR RECIPIES
+            </div>
+            <div class="clear-btn">
+              CLEAR
+            </div>
+          </div>
+        </div>
+        </div>
+        <script type="module" src="../javascripts/selectionscript.js"></script>
+        <script src="../javascripts/main.js"></script>
+</body>
+</html>

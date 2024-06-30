@@ -1,0 +1,117 @@
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+  .content h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmax;
+    padding: 10px;
+    text-align: center;
+  }
+  .list-of-ingredients,
+  .selected-ingredients{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .list-of-ingredients span{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s ease;
+  }
+  .list-of-ingredients span:hover{
+    background-color: aqua;
+    color: rgb(32, 19, 3);
+  }
+  .selected-ingredients{
+    width: calc(100% - 55px);
+    height: 20vh;
+    border: 3px solid black;
+    margin: 15px;
+  }
+  .selected-ingredients span{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+  }
+  .check-btn{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .details-of-recipies{
+    width: calc(100% - 55px);
+    height: fit-content;
+    padding: 10px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .up{
+    width: calc(100% - 55px);
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .down{
+    font-size: 1.5vw;
+  }
+  .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  .btns{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  }
+  .clear-btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aqua;
+    cursor: pointer;
+  }
+  .procedure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    cursor: pointer;
+  }

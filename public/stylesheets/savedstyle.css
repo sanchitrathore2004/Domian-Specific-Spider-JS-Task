@@ -1,0 +1,58 @@
+  .content{
+    width: 100%;
+    height: calc(100% - 7vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title{
+    font-size: 2vw;
+    height: fit-content;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .up{
+    width: calc(100% - 55px);
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+  }
+  .down{
+    font-size: 1.5vw;
+  }
+  .details-of-recipies{
+    width: calc(100% - 55px);
+    height: fit-content;
+    padding: 10px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  .procedure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    cursor: pointer;
+  }
